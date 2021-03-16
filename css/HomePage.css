@@ -1,0 +1,80 @@
+@font-face {
+   font-family: Roboto-Regular;
+   /* Имя шрифта */
+   src: url(../fonts/Roboto-Regular.ttf);
+   /* Путь к файлу со шрифтом */
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   text-align: center;
+   min-width: 100vw;
+   min-height: 100vh;
+   font-family: Roboto-Medium;
+}
+
+.homepage-grid-container {
+   /* border: 1px solid black; */
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 30% 40% 30%;
+   vertical-align: middle;
+   background-color: #f8f8f8;
+}
+
+.homepage-grid-element:nth-child(2) {
+   display: flex;
+   justify-content: center;
+   /*Центрирование по горизонтали*/
+   align-items: center;
+   /*Центрирование по вертикали */
+   flex-direction: column;
+   text-align: center;
+}
+
+.homepage-grid-element:nth-child(2) h1 {
+   margin: 1rem;
+   font-family: 'Roboto-Regular';
+   font-weight: 300;
+   color: #222;
+}
+
+.anchor-block {
+   text-align: left;
+   margin-top: .5rem;
+}
+
+.circle-image {
+   border-radius: 50%;
+   width: 10em;
+   height: 10em;
+}
+
+.link-container {
+   padding: 0 0 0.7rem 2rem;
+   margin: .7rem;
+   font-family: Roboto-Regular, consolas, "Helvetica Neue", Helvetica, sans-serif;
+   background-repeat: no-repeat;
+   background-size: 18px;
+}
+
+.link-container a {
+   text-decoration: none;
+   color: #444;
+}
+
+.secondary {
+   color: #888;
+}
+
+.link-container a:hover {
+   color: rgba(58, 101, 180, 0.705);
+   background-color: rgba(194, 204, 248, 0.171);
+}
+
